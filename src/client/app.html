@@ -1,11 +1,11 @@
 <template>
     <require from="bootstrap/css/bootstrap.css"></require>
-    <h1>${greeting}</h1>
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="greeting">Greeting</label>
-            <input id="greeting" class="form-control" type="text" value.bind="greeting">
-        </div>
+    <form class="form">
+        <ul class="unstyled">
+            <li repeat.for="todo of todos">
+                <input type="text" class="form-control" value.bind="todo.description">
+                <input type="checkbox" class="form-control" checked.bind="todo.complete">
+            </li>
+        </ul>
     </form>
-    <button class="btn btn-primary" type="button" click.trigger="changeGreeting()">Change greeting</button>
 </template>
