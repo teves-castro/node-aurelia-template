@@ -1,8 +1,6 @@
-/**
- * App
- */
 export class App {
-    constructor() {
-        
+    greeting = "Hello from Aurelia!"
+    changeGreeting() {
+        this.greeting = "Another greeting!";
     }
 }

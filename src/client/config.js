@@ -3,13 +3,19 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "typescript",
   paths: {
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "github:*": "jspm_packages/github/*"
   },
 
   map: {
     "aurelia": "npm:aurelia@0.0.0",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.1.4",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
+    "font-awesome": "npm:font-awesome@4.5.0",
     "typescript": "npm:typescript@1.8.7",
+    "github:twbs/bootstrap@3.3.6": {
+      "jquery": "github:components/jquery@2.2.1"
+    },
     "npm:aurelia-binding@1.0.0-beta.1.2.2": {
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.1.6",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
@@ -123,6 +129,9 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.1.1",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.1.1"
+    },
+    "npm:font-awesome@4.5.0": {
+      "css": "github:systemjs/plugin-css@0.1.20"
     }
   }
 });

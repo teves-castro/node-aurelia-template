@@ -1,4 +1,5 @@
 "use strict";
+require("bootstrap");
 function configure(aurelia) {
     aurelia.use
         .standardConfiguration()

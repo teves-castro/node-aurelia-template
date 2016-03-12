@@ -1,3 +1,11 @@
 <template>
-    <div>Hello from Aurelia!</div>
+    <require from="bootstrap/css/bootstrap.css"></require>
+    <h1>${greeting}</h1>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="greeting">Greeting</label>
+            <input id="greeting" class="form-control" type="text" value.bind="greeting">
+        </div>
+    </form>
+    <button class="btn btn-primary" type="button" click.trigger="changeGreeting()">Change greeting</button>
 </template>
