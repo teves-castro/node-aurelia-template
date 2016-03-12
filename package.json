@@ -39,5 +39,14 @@
   },
   "engines": {
     "node": ">=2.0.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src/client"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
   }
 }
