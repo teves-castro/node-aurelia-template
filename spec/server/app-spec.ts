@@ -1,4 +1,4 @@
-import {Greeter} from "../../src/server/app";
+import {Greeter} from "../../src/app";
 
 describe("greeter", () => {
     it("should greet with message", () => {

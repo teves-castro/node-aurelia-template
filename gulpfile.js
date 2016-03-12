@@ -63,5 +63,5 @@ gulp.task('test', 'Runs the Jasmine test specs', function() {
 });
 
 gulp.task('watch', 'Watches ts source files and runs build on change', function() {
-    gulp.watch(['tsconfig.json', 'src/**/*.ts', 'test/**/*.ts'], ['build']);
+    gulp.watch(['tsconfig.json', 'src/**/*.ts', 'spec/**/*.ts'], ['build']);
 });

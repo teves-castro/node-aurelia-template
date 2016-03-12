@@ -1,4 +1,5 @@
 "use strict";
+var express = require("express");
 var Greeter = (function () {
     function Greeter(greeting) {
         this.greeting = greeting;
@@ -9,8 +10,12 @@ var Greeter = (function () {
     return Greeter;
 }());
 exports.Greeter = Greeter;
+var app = express();
+app.use(express.static(__dirname + "/client"));
+console.log("files: " + __dirname + "/client");
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!');
+});
 var greeter = new Greeter("Hello");
 console.log(greeter.greet("Cristina"));
-console.log('Ending...');
-console.log('Realy ending now!');
 //# sourceMappingURL=app.js.map
