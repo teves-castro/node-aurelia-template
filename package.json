@@ -44,7 +44,10 @@
     "directories": {
       "baseURL": "src/client"
     },
-    "dependencies": {},
+    "dependencies": {
+      "aurelia": "npm:aurelia@^0.0.0",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.4"
+    },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }
