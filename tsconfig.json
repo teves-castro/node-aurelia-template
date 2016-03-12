@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "typings/main.d.ts",
+    "src/**/*.ts",
+    "spec/**/*.ts"
+  ],
+  "files": [
+    "typings/main.d.ts",
+    "src/server/app.ts",
+    "spec/server/app-spec.ts"
+  ]
+}
