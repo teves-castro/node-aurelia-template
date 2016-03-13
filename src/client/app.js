@@ -21,10 +21,33 @@ const aurelia_fetch_client_1 = require("aurelia-fetch-client");
 let App = class App {
     constructor(http) {
         this.http = http;
+        this.newTodo = {
+            description: "",
+            complete: false
+        };
         http.configure(config => config
             .useStandardConfiguration()
             .withBaseUrl("api/"));
         this.refresh();
+    }
+    completeChanged(todo) {
+        return __awaiter(this, void 0, void 0, function* () {
+            console.log(todo);
+            yield this.http.fetch("todos", {
+                method: 'put',
+                body: aurelia_fetch_client_1.json(todo)
+            });
+            yield this.refresh();
+        });
+    }
+    addTodo() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.http.fetch("todos", {
+                method: 'post',
+                body: aurelia_fetch_client_1.json(this.newTodo)
+            });
+            yield this.refresh();
+        });
     }
     refresh() {
         return __awaiter(this, void 0, void 0, function* () {

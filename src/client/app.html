@@ -1,11 +1,13 @@
 <template>
     <require from="bootstrap/css/bootstrap.css"></require>
-    <form class="form">
+    <form class="form" submit.delegate="addTodo()">
         <ul class="unstyled">
             <li repeat.for="todo of todos">
-                <input type="text" class="form-control" value.bind="todo.description">
-                <input type="checkbox" class="form-control" checked.bind="todo.complete">
+                <span>${todo.description}</span>
+                <input type="checkbox" class="form-control" checked.bind="todo.complete" change.trigger="completeChanged(todo)">
             </li>
         </ul>
+        <input type="text" class="form-control" value.bind="newTodo.description">
+        <input type="submit" value="Add todo">
     </form>
 </template>
