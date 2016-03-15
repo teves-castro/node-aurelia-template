@@ -33,7 +33,7 @@ let App = class App {
     completeChanged(todo) {
         return __awaiter(this, void 0, void 0, function* () {
             console.log(todo);
-            yield this.http.fetch("todos", {
+            yield this.http.fetch("todos/setcomplete", {
                 method: 'put',
                 body: aurelia_fetch_client_1.json(todo)
             });
@@ -45,6 +45,15 @@ let App = class App {
             yield this.http.fetch("todos", {
                 method: 'post',
                 body: aurelia_fetch_client_1.json(this.newTodo)
+            });
+            yield this.refresh();
+            this.newTodo.description = "";
+        });
+    }
+    deleteTodo(todo) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.http.fetch("todos/" + todo._id, {
+                method: 'delete'
             });
             yield this.refresh();
         });
