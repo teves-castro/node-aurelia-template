@@ -1,9 +1,9 @@
 "use strict";
 const express = require("express");
 const bodyParser = require("body-parser");
-const todo_1 = require("./server/todo");
+const todo_1 = require("./modules/todo");
 var app = express();
-app.use(express.static(__dirname + "/client"));
+app.use(express.static(__dirname + "/../client"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true

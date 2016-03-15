@@ -1,10 +1,10 @@
 import * as express from "express"
 import * as bodyParser from "body-parser"
-import {TodoService} from "./server/todo"
+import {TodoService} from "./modules/todo"
 
 var app = express();
 
-app.use(express.static(__dirname + "/client"));
+app.use(express.static(__dirname + "/../client"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true

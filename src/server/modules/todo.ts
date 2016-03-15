@@ -1,5 +1,5 @@
 import {Router, Express} from "express"
-import {Todo, ITodo} from "../models/todo"
+import {Todo, ITodo} from "../../models/todo"
 import {MongoClient, Db, ObjectID} from "mongodb"
 // import * as ibmdb from "ibm_db"
 
