@@ -64,6 +64,11 @@ let App = class App {
             this.todos = yield todos.json();
         });
     }
+    activate() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve(), 500);
+        });
+    }
 };
 App = __decorate([
     aurelia_framework_1.autoinject, 

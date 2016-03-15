@@ -1,6 +1,6 @@
 import {autoinject, computedFrom} from 'aurelia-framework'
 import {HttpClient, json} from "aurelia-fetch-client"
-import {Todo, ITodo} from "../models/todo"
+import {Todo, ITodo} from "../../models/todo"
 //import * as Immutable from "immutable"
 
 @autoinject
@@ -52,5 +52,11 @@ export class App {
     async refresh() {
         let todos = await this.http.fetch("todos");
         this.todos = await todos.json() as Todo[];
+    }
+
+    activate() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve(), 500);
+        });
     }
 }
