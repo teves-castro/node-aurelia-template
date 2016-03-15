@@ -8,8 +8,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-var service = new todo_1.TodoService();
-service.registerRoutes(app);
+var todoRouter = todo_1.TodoService.getRouter();
+app.use("/api", todoRouter);
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });

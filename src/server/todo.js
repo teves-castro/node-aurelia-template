@@ -1,13 +1,11 @@
 "use strict";
+const express_1 = require("express");
 class TodoService {
-    constructor() {
-        this.todos = [
-            { description: "Do this", complete: false },
-            { description: "Do that", complete: true }
-        ];
-    }
-    registerRoutes(app) {
-        app.get("/api/todos", (req, res) => {
+    static getRouter() {
+        var router = express_1.Router();
+        router
+            .route("/todos")
+            .get((req, res) => {
             try {
                 res.json(this.todos);
             }
@@ -15,7 +13,9 @@ class TodoService {
                 res.json({ info: "error during get.", error: error });
             }
         });
-        app.post("/api/todos", (req, res) => {
+        router
+            .route("/todos")
+            .post((req, res) => {
             try {
                 let todo = req.body;
                 this.todos.push(todo);
@@ -25,7 +25,9 @@ class TodoService {
                 res.json({ info: "error during todo create.", error: error });
             }
         });
-        app.put("/api/todos", (req, res) => {
+        router
+            .route("/todos")
+            .put((req, res) => {
             try {
                 let todo = req.body;
                 let todos = this.todos;
@@ -37,7 +39,12 @@ class TodoService {
                 res.json({ info: "error during todo modify.", error: error });
             }
         });
+        return router;
     }
 }
+TodoService.todos = [
+    { description: "Do this", complete: false },
+    { description: "Do that", complete: true }
+];
 exports.TodoService = TodoService;
 //# sourceMappingURL=todo.js.map

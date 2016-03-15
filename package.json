@@ -16,7 +16,8 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongodb": "^2.1.8"
   },
   "devDependencies": {
     "del": "2.0.2",
