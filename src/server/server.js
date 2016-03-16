@@ -11,6 +11,6 @@ app.use(bodyParser.urlencoded({
 var todoRouter = todo_1.TodoService.getRouter();
 app.use("/api", todoRouter);
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
+    console.log('Todos listening on port 3000!');
 });
 //# sourceMappingURL=server.js.map
