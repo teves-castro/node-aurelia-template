@@ -1,14 +1,11 @@
 System.config({
-  baseURL: "/",
   defaultJSExtensions: true,
-  transpiler: "typescript",
+  transpiler: "false",
   paths: {
     "npm:*": "jspm_packages/npm/*",
     "github:*": "jspm_packages/github/*"
   },
-
   map: {
-    "aurelia": "npm:aurelia@0.0.0",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.1.4",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.1.1",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
