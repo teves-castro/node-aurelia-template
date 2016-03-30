@@ -4,7 +4,6 @@
         "**/.git": true,
         "**/.DS_Store": true,
         "node_modulesx": true,
-        "**/jspm_packagesx": true,
         "**/*.js": {
             "when": "$(basename).ts"
         }
