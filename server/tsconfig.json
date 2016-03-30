@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "filesGlob": [
+    "typings/main.d.ts",
+    "src/**/*.ts",
+    "spec/**/*.ts"
+  ],
+  "files": [
+    "typings/main.d.ts",
+    "src/models/todo.ts",
+    "src/server.ts",
+    "src/modules/db2test.ts",
+    "src/modules/todo.ts",
+    "spec/server-spec.ts"
+  ]
+}

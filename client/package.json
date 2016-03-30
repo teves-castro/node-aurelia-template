@@ -1,0 +1,64 @@
+{
+  "name": "node-aurelia-template-client",
+  "version": "0.0.0",
+  "description": "node-aurelia-template-client",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": ""
+  },
+  "author": "",
+  "keywords": [
+    ""
+  ],
+  "files": [],
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js --hot --inline --progress --devtool eval",
+    "build": "webpack --config webpack.config.js --progress --profile",
+    "prod": "webpack -p --config webpack.prod.config.js --progress --devtool source-map",
+    "test": "karma start"
+  },
+  "dependencies": {
+    "aurelia-bootstrapper-webpack": "^1.0.0-beta.1.0.0",
+    "aurelia-event-aggregator": "^1.0.0-beta.1.2.0",
+    "aurelia-fetch-client": "^1.0.0-beta.1.2.0",
+    "aurelia-framework": "^1.0.0-beta.1.2.1",
+    "aurelia-history-browser": "^1.0.0-beta.1.2.0",
+    "aurelia-logging-console": "^1.0.0-beta.1.2.0",
+    "aurelia-templating-binding": "^1.0.0-beta.1.2.1",
+    "aurelia-templating-resources": "^1.0.0-beta.1.2.1",
+    "aurelia-templating-router": "^1.0.0-beta.1.2.0",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {
+    "aurelia-bundler": "^0.3.2",
+    "aurelia-tools": "^0.1.20",
+    "aurelia-webpack-plugin": "^1.0.0-beta.1.0.1",
+    "css-loader": "^0.23.1",
+    "core-js": "^2.2.0",
+    "del": "2.0.2",
+    "dotbin": "^1.0",
+    "dts-generator": "^1.7",
+    "eslint": "^1.10.3",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.9.0",
+    "jasmine": "^2.3.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "raw-loader": "^0.5.1",
+    "require-dir": "^0.3.0",
+    "style-loader": "^0.13.0",
+    "tsconfig-glob": "^0.4.2",
+    "tslint": "^3.5",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.7",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "engines": {
+    "node": ">=2.0.0"
+  }
+}

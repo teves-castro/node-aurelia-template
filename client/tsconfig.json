@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "filesGlob": [
+        "typings/main.d.ts",
+        "src/**/*.ts",
+        "spec/**/*.ts",
+        "node_modules/aurelia-*/dist/aurelia-*.d.ts"
+    ],
+    "files": [
+        "typings/main.d.ts",
+        "node_modules/aurelia-binding/dist/aurelia-binding.d.ts",
+        "node_modules/aurelia-bootstrapper-webpack/dist/aurelia-bootstrapper-webpack.d.ts",
+        "node_modules/aurelia-dependency-injection/dist/aurelia-dependency-injection.d.ts",
+        "node_modules/aurelia-event-aggregator/dist/aurelia-event-aggregator.d.ts",
+        "node_modules/aurelia-fetch-client/dist/aurelia-fetch-client.d.ts",
+        "node_modules/aurelia-framework/dist/aurelia-framework.d.ts",
+        "node_modules/aurelia-history-browser/dist/aurelia-history-browser.d.ts",
+        "node_modules/aurelia-history/dist/aurelia-history.d.ts",
+        "node_modules/aurelia-loader-webpack/dist/aurelia-loader-webpack.d.ts",
+        "node_modules/aurelia-loader/dist/aurelia-loader.d.ts",
+        "node_modules/aurelia-logging-console/dist/aurelia-logging-console.d.ts",
+        "node_modules/aurelia-logging/dist/aurelia-logging.d.ts",
+        "node_modules/aurelia-metadata/dist/aurelia-metadata.d.ts",
+        "node_modules/aurelia-pal-browser/dist/aurelia-pal-browser.d.ts",
+        "node_modules/aurelia-pal/dist/aurelia-pal.d.ts",
+        "node_modules/aurelia-path/dist/aurelia-path.d.ts",
+        "node_modules/aurelia-polyfills/dist/aurelia-polyfills.d.ts",
+        "node_modules/aurelia-route-recognizer/dist/aurelia-route-recognizer.d.ts",
+        "node_modules/aurelia-router/dist/aurelia-router.d.ts",
+        "node_modules/aurelia-task-queue/dist/aurelia-task-queue.d.ts",
+        "node_modules/aurelia-templating-binding/dist/aurelia-templating-binding.d.ts",
+        "node_modules/aurelia-templating-resources/dist/aurelia-templating-resources.d.ts",
+        "node_modules/aurelia-templating-router/dist/aurelia-templating-router.d.ts",
+        "node_modules/aurelia-templating/dist/aurelia-templating.d.ts",
+        "src/main.ts",
+        "src/models/todo.ts",
+        "src/pages/app.ts"
+    ]
+}
